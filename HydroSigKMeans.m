@@ -12,6 +12,7 @@
     
 % Set path to folder where batch routine will run using .mat formatted data
 % Example for Hirnbach data:
+addpath('D:\MATLAB\Kmeans\');
 filePath = 'D:\MATLAB\Kmeans\Data\Hirnbach\Basin_8_Center_Profile-60s\MATLAB\Data';
      
 tInt = 12000; % sample length
@@ -70,7 +71,7 @@ interval = 100*1/11; % creates scaled procent interval equal to the number of in
 % 0:1:6 kPa range for slots, 0:3 kPa for pools
 pMax = 6; % max of kPa windrose scale
 pStep = 6; % discretization interval 0:pStep:pMax
-[figure_handle,count,speeds,directions,Table,circles] = WindRose(d,v,'anglenorth',0,'angleeast',90,'labels',{'Anterior','Posterior','Right','Left'},'MaxFrequency',interval,'inverse',false,'FreqLabelAngle',-45,'vWinds',[0:3/6:3],...
+[figure_handle,count,speeds,directions,Table,circles] = WindRose(d,v,'anglenorth',0,'angleeast',90,'labels',{'Anterior','Posterior','Right','Left'},'MaxFrequency',interval,'inverse',false,'FreqLabelAngle',-45,'vWinds',[0:pMax/pStep:pMax],...
 'cMap','jet','TitleString',{'';''},'LabLegend','Pressure (kPa)','LegendVariable','kPa','LegendType',2);
 
 % create histogram of pressure time series data
