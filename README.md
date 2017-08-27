@@ -1,7 +1,7 @@
 # hydro-sig
 Data and MATLAB code to create hydrodynamic signatures from an artificial lateral line probe.
 
-The Matlab script HydroSigKMeans.m creates the hydrodynamic signatures, generates a concatenated features for the collection of measurement data in a single folder and performs k-means clustering with an elbow plot to determine the optimal number of clusters.
+The Matlab script HydroSigKMeans.m creates the hydrodynamic signatures, generates concatenated features for the collection of measurement data in a single folder and performs k-means clustering with an elbow plot to determine the optimal number of clusters.
 
 A PDF outlining the use of the script and data is provided in the "MATLAB_Code_User_Guide".
 
